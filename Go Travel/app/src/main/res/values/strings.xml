@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">GoTravel</string>
+    <string name="newTrip">Plan new trip</string>
+    <string name="flights">Chech fligths</string>
+    <string name="guide">Travel guide</string>
+    <string name="nameTrip">Trip name</string>
+    <string name="locaton">Location</string>
+    <string name="date">Date start-Date end</string>
+    <string name="info">Info:</string>
+    <string name="saveButton">Save</string>
+    <string name="homeButton">Home</string>
+    <string name="searchButton">Search</string>
+    <string name="origincode">Origin code:</string>
+    <string name="destinationcode">Destination code:</string>
+    <string name="departureDate">Departure date:</string>
+    <string name="fillerEditText">Enter....</string>
+    <string name="titleGuide">The Guide for easier travel experience:</string>
+    <string name="textGuide"><br>Travel planning tips:</br>
+
+        <br>1. Take out annual travel insurance</br>
+        2. The earlier you book, the cheaper
+           the flights
+        3. Book refundable hotel rooms
+        4. Start preparing your trip at least
+           6 weeks before you go
+        5. Book vacation time well before
+           you go
+        6. Bookmark posts on Instagram to
+           remember great places to visit
+    </string>
+    <string name="travelquote">travel quote</string>
+    <string name="whereTextView"> to </string>
+    <string name="departureDateTime">Departure date and time :</string>
+    <string name="arrivalDateTime">Arrival date and time :</string>
+    <string name="flightNumber">Flight number: </string>
+</resources>
+
