@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#9AA77EC5">
+    android:background="#97FFFFFF">
 
     <TextView
         android:id="@+id/originCodeTextView"
@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:text="@string/textview"
         android:textColor="#37474F"
-        android:textSize="16sp"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,7 +23,7 @@
         android:layout_marginStart="5dp"
         android:text="@string/whereTextView"
         android:textColor="#37474F"
-        android:textSize="16sp"
+        android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/originCodeTextView"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -34,7 +34,7 @@
         android:layout_marginStart="5dp"
         android:text="@string/textview"
         android:textColor="#37474F"
-        android:textSize="16sp"
+        android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/whereTextView"
         app:layout_constraintTop_toTopOf="parent" />
 

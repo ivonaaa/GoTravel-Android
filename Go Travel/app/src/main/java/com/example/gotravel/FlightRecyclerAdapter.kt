@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class FlightRecyclerAdapter(private val items: List<Flight>) :
+class FlightRecyclerAdapter(private val items: List<List<Flight>>) :
     RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
@@ -18,7 +18,7 @@ class FlightRecyclerAdapter(private val items: List<Flight>) :
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         when(holder){
             is FlightViewHolder -> {
-                holder.bind(items[position])
+                holder.bind(items[position][0])
             }
         }
     }

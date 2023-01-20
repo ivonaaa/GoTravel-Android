@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.Navigation
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.firestore.ktx.firestore
@@ -43,6 +44,8 @@ TripRecyclerAdapter.ContentListener{
                 tripsRecyclerView.apply {
                     layoutManager = LinearLayoutManager(activity)
                     adapter = recyclerAdapter
+                    addItemDecoration(DividerItemDecoration(
+                        this.context, DividerItemDecoration.VERTICAL))
                 }
             }
             .addOnFailureListener { exception ->

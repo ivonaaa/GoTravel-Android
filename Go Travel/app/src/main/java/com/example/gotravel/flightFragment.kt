@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import androidx.navigation.Navigation
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import retrofit2.Call
@@ -50,7 +51,9 @@ class flightFragment : Fragment() {
                             layoutManager =
                                 LinearLayoutManager(activity)
                             adapter =
-                                FlightRecyclerAdapter(response.body()!!.origin_to_destination_trip[0])
+                                FlightRecyclerAdapter(response.body()!!.origin_to_destination_trip)
+                            addItemDecoration(DividerItemDecoration(
+                                this.context, DividerItemDecoration.VERTICAL))
                         }
                     }
                 }
