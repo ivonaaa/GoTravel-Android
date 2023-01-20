@@ -33,8 +33,9 @@ class flightFragment : Fragment() {
         val request = FlightServiceBulider.buildService(FlightEndpoints::class.java)
 
         view.findViewById<Button>(R.id.searchButton).setOnClickListener {
-            val call = request.getProducts("de8a923b62msh15b6446eff599d6p191858jsna56ac4e5e24b",
-                /*"ryanair.p.rapidapi.com",*/
+            val call = request.getProducts(
+                "de8a923b62msh15b6446eff599d6p191858jsna56ac4e5e24b",
+                "ryanair.p.rapidapi.com",
                 view.findViewById<EditText>(R.id.originCodeText).text.toString(),
                 view.findViewById<EditText>(R.id.destinationCodeText).text.toString(),
                 view.findViewById<EditText>(R.id.departureDateText).text.toString())
