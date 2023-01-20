@@ -53,13 +53,12 @@
         android:id="@+id/departureDateTimeTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:text="@string/textview"
         android:textColor="#37474F"
         android:textSize="16sp"
-        app:layout_constraintStart_toEndOf="@+id/departureStringTextView"
-        app:layout_constraintTop_toBottomOf="@+id/originCodeTextView" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/departureStringTextView" />
 
     <TextView
         android:id="@+id/arrivalStringTextView"
@@ -70,30 +69,31 @@
         android:textColor="#37474F"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/departureStringTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/departureDateTimeTextView" />
 
     <TextView
         android:id="@+id/arrivalDateTimeTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
         android:layout_marginTop="10dp"
         android:text="@string/textview"
         android:textColor="#37474F"
         android:textSize="16sp"
-        app:layout_constraintStart_toEndOf="@+id/arrivalStringTextView"
-        app:layout_constraintTop_toBottomOf="@+id/departureStringTextView" />
+        app:layout_constraintStart_toStartOf="@+id/FlightNumberStringTextView"
+        app:layout_constraintTop_toBottomOf="@+id/arrivalStringTextView" />
 
     <TextView
         android:id="@+id/FlightNumberStringTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
         android:text="@string/flightNumber"
         android:textColor="#37474F"
         android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/arrivalStringTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/arrivalDateTimeTextView" />
 
     <TextView
         android:id="@+id/flightNumberTextView"
@@ -105,5 +105,5 @@
         android:textColor="#37474F"
         android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/FlightNumberStringTextView"
-        app:layout_constraintTop_toBottomOf="@+id/arrivalStringTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/arrivalDateTimeTextView" />
 </androidx.constraintlayout.widget.ConstraintLayout>

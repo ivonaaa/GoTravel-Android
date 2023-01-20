@@ -39,21 +39,21 @@ class flightFragment : Fragment() {
                 view.findViewById<EditText>(R.id.destinationCodeText).text.toString(),
                 view.findViewById<EditText>(R.id.departureDateText).text.toString())
 
-            call.enqueue(object : Callback<ArrayList<Flight>> {
+            call.enqueue(object : Callback<ApiResponse> {
                 override fun onResponse(
-                    call: Call<ArrayList<Flight>>,
-                    response: Response<ArrayList<Flight>>
+                    call: Call<ApiResponse>,
+                    response: Response<ApiResponse>
                 ) {
                     if (response.isSuccessful) {
                         view.findViewById<RecyclerView>(R.id.flightsRecyclerView).apply {
                             layoutManager =
                                 LinearLayoutManager(activity)
                             adapter =
-                                FlightRecyclerAdapter(response.body()!!)
+                                FlightRecyclerAdapter(response.body()!!.origin_to_destination_trip[0])
                         }
                     }
                 }
-                override fun onFailure(call: Call<ArrayList<Flight>>, t: Throwable) {
+                override fun onFailure(call: Call<ApiResponse>, t: Throwable) {
                     Log.e("FAIL", t.message.toString())
                 }
             })

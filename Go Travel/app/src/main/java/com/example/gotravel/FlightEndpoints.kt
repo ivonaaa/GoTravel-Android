@@ -13,5 +13,5 @@ interface FlightEndpoints {
                     @Query("origin_code") origin_code : String,
                     @Query("destination_code") destination_code : String,
                     @Query("origin_departure_date") origin_departure_date : String):
-            Call<ArrayList<Flight>>
+            Call<ApiResponse>
 }

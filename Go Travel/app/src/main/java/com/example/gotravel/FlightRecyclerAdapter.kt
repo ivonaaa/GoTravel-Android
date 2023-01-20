@@ -44,8 +44,8 @@ class FlightRecyclerAdapter(private val items: List<Flight>) :
         fun bind(flights : Flight){
             originCode.text = flights.origin_code
             destinationCode.text = flights.destination_code
-            departureDatetime.text = flights.departure_datetime
-            arrivalDatetime.text = flights.arrival_datetime
+            departureDatetime.text = flights.departure_datetime_utc
+            arrivalDatetime.text = flights.arrival_datetime_utc
             flightNumber.text = flights.flight_number
         }
     }
