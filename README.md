@@ -9,5 +9,5 @@ Android app used to plan trips, search RyanAir flights and read travel guide.
 ### Language used:
 - Kotlin
 
-### Rest Api used:
+### Rapid Api used:
 https://rapidapi.com/bettyteam/api/ryanair
